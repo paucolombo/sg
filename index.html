@@ -1,0 +1,194 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Social Gaming</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="style.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+<!-- PANTALLA INICIO -->
+
+	<div data-role="page" id="inicio">
+    	<div id="headerInicio" data-role="header">
+        	<img alt="Social Gaming" src="img/logo.png" />
+        </div>
+        <div role="main" class="ui-content" id="enterBtn">
+          <div data-role="fieldcontain" id="loginField">
+            <label class="login" for="textinput">User:</label>
+            <input type="text" name="textinput" id="textinput" value=""  />
+          </div>
+          <div data-role="fieldcontain" id="loginField2">
+            <label class="login" for="passwordinput">Password:</label>
+            <input type="password" name="passwordinput" id="passwordinput" value=""  />
+          </div>
+<a href="#menu" class="ui-btn ui-btn-b ui-btn ui-corner-all ui-btn-inline" data-transition="fade" id="entrarBtn">Ingresar</a>
+       
+        </div>
+	</div>
+
+<!-- SECCION MENU -->
+
+    <div data-role="page" id="menu">
+    
+    
+    	<div data-role="header" id="menuHeader">
+        	<img alt="Social Gaming" src="img/logo.png" />
+        </div>
+		
+		<div role="main" class="ui-content">
+        	<ul data-role="listview" data-inset="true">
+				<li><a href="#nota1">
+					<img src="img/kh3thumb.jpg">
+					<h2 class="imprenta">Kingdom Hearts 3' Updates, Fecha d Lanzamiento, Rumores</h2>
+					<p>Los fans estan aún esperando información acerca del lanzamiento "Kingdom Hearts 3" en la E3.</p></a>
+				</li>
+				<li><a href="#nota2">
+            		<img src="img/noticia2thumb.jpg">
+                    <h2 class="imprenta">¿Quieres ser en un creador de videojuegos?s</h2>
+                    <p>En la actualidad, la industria de los videojuegos ha podido generar más ingresos económicos que otras importantes industrias del entretenimiento, como la música o el cine.</p></a>
+				</li>
+				<li><a href="#nota3">
+					<img src="img/fifathumb.jpg">
+					<h2 class="imprenta">El #FIFA16 incluirá a doce selecciones femeninas</h2>
+                    <p>Es la primera vez que el popular videojuego cuenta con mujeres. "Es increíble", dijo Abby Wambach, la mejor jugadora de fútbol femenino. La selección argentina no está.</p></a>
+				</li>
+                <li><a href="#nota4">
+					<img src="img/nota4thumb.jpg">
+					<h2 class="imprenta">Cuando los videojuegos y la conducción real van de la mano</h2>
+                    <p>Castrol EDGE presentó el último de sus Desafíos Titanio, en el que la tecnología de los videojuegos y la experiencia real de conducción se mezclan gracias al Oculus Rift!.</p></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+<!-- SECCION RECORRIDOS -->
+
+<div data-role="page" id="recorridos">
+	<div data-role="header" data-position="fixed" data-theme="b">
+    	<a href="#menu" data-rel="back" data-icon="carat-l" data-iconpos="notext">Back</a>
+    	<h1 class="imprenta">Recorridos</h1>
+    </div>
+	<div data-role="main" class="ui-content">
+    	<h2 class="tituloRecorrido">Favoritos</h2>
+		<ul data-role="listview">
+			<li class="recorrido">Este es mi Museo</li>
+			<li class="recorrido2">Obras relevantes</li>
+			<li class="recorrido3">Romanticismo</li>
+			<li class="recorrido4">Esculturas Cl&aacute;sicas</li>
+			<li class="recorrido5">Pinturas al &oacute;leo</li>
+            <li class="recorrido6">Artistas argentinos</li>
+            <li class="recorrido7">Conociendo Jap&oacute;n</li>
+            <li class="recorrido8">Artistas latinoamericanos</li>
+            <li class="recorrido9">Coleccionismo</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="javascript:replaceContentInContainer('tituloRecorrido', '+Visitados'); javascript:replaceContentInContainer('recorrido', 'La Figura Humana'); javascript:replaceContentInContainer('recorrido2', 'Cl&aacute;sicos'); javascript:replaceContentInContainer('recorrido3', 'Ojos Abiertos'); javascript:replaceContentInContainer('recorrido4', 'Fotos del Pasado'); javascript:replaceContentInContainer('recorrido5', 'Pinturas campestres'); javascript:replaceContentInContainer('recorrido6', 'Esculturas romanas'); javascript:replaceContentInContainer('recorrido7', 'Fotografía moderna'); javascript:replaceContentInContainer('recorrido8', 'Im&aacute;genes cl&aacute;sicas'); javascript:replaceContentInContainer('recorrido9', 'Esculturas en madera');" data-icon="grid">+Visitados</a></li>
+				<li><a href="javascript:replaceContentInContainer('tituloRecorrido', 'Favoritos'); javascript:replaceContentInContainer('recorrido', 'Este es mi Museo'); javascript:replaceContentInContainer('recorrido2', 'Obras relevantes'); javascript:replaceContentInContainer('recorrido3', 'Romanticismo'); javascript:replaceContentInContainer('recorrido4', 'Esculturas Cl&aacute;sicas'); javascript:replaceContentInContainer('recorrido5', 'Pinturas al &oacute;leo'); javascript:replaceContentInContainer('recorrido6', 'Artistas argentinos'); javascript:replaceContentInContainer('recorrido7', 'Conociendo Jap&oacute;n'); javascript:replaceContentInContainer('recorrido8', 'Artistas latinoamericanos'); javascript:replaceContentInContainer('recorrido9', 'Coleccionismo');" data-icon="star">Favoritos</a></li>
+				<li><a href="javascript:replaceContentInContainer('tituloRecorrido', 'Opcionales'); javascript:replaceContentInContainer('recorrido', 'Caminos de Rupturas'); javascript:replaceContentInContainer('recorrido2', 'Miadas'); javascript:replaceContentInContainer('recorrido3', 'Fotograf&iacute;a moderna'); javascript:replaceContentInContainer('recorrido4', 'Personajes hist&oacute;ricos'); javascript:replaceContentInContainer('recorrido5', 'Modelos cl&aacute;sicos'); javascript:replaceContentInContainer('recorrido6', 'Arte Moderno'); javascript:replaceContentInContainer('recorrido7', 'Grandes de la pintura'); javascript:replaceContentInContainer('recorrido8', 'Esculturas modernas'); javascript:replaceContentInContainer('recorrido9', 'Pinturas acrílicas');" data-icon="gear">Opcionales</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+<!-- SECCION +OBRAS -->
+
+<div data-role="page" id="obras" data-title="Inbox" data-url="demo-page">
+	<div data-role="header" data-position="fixed" data-theme="b">
+		<h1>Obras</h1>
+		<a href="#menu" data-rel="back" data-icon="carat-l" data-iconpos="notext">Back</a>
+		<a href="#" onclick="window.location.reload()" data-icon="back" data-iconpos="notext">Refresh</a>
+	</div><!-- /header -->
+	<div role="main" class="ui-content">
+		<ul id="list" class="touch" data-role="listview" data-icon="false" data-split-icon="delete">
+			<li>
+				<a href="#popupRiachuelo" data-rel="popup" data-position-to="window" data-transition="fade">
+                	<img class="popphoto thumb" src="img/riachuelo.jpg" alt="El Riachuelo" style="width:30%">
+					<h3 class="topic moverTxt">El Riachuelo</h3>
+					<p class="moverTxt"><strong>P&iacute;o Collivadino</strong></p>
+					<p class="moverTxt">1916</p>
+				</a>
+				<a href="#" class="delete">Delete</a>
+			</li>
+			<li>
+				<a href="#popupMaiz" data-rel="popup" data-position-to="window" data-transition="fade">
+                	<img class="popphoto thumb" src="img/maiz.jpg" alt="Caja de ma&iacute;z" style="width:30%">
+					<h3 class="topic moverTxt">Caja de ma&iacute;z</h3>
+					<p class="moverTxt"><strong>Luis Fernando Benedit</strong></p>
+					<p class="moverTxt">1978</p>
+				</a>
+				<a href="#" class="delete">Delete</a>
+			</li>
+			<li>
+				<a href="#popupDuelo" data-rel="popup" data-position-to="window" data-transition="fade">
+                	<img class="popphoto thumb" src="img/duelo.jpg" alt="El primer duelo" style="width:30%">
+					<h3 class="topic moverTxt">Premier deuil</h3>
+					<p class="moverTxt"><strong>William Bouguereau</strong></p>
+					<p class="moverTxt">1888</p>
+				</a>
+				<a href="#" class="delete">Delete</a>
+			</li>
+			<li>
+				<a href="#popupNocturno" data-rel="popup" data-position-to="window" data-transition="fade">
+                	<img class="popphoto thumb" src="img/nocturno.jpg" alt="Buenos Aires nocturno" style="width:30%">
+					<h3 class="topic moverTxt">BS.AS. nocturno</h3>
+					<p class="moverTxt"><strong>Horacio Coppola</strong></p>
+					<p class="moverTxt">1936</p>
+				</a>
+				<a href="#" class="delete">Delete</a>
+			</li>
+			<li>
+				<a href="#popupSiesta" data-rel="popup" data-position-to="window" data-transition="fade">
+                	<img class="popphoto thumb" src="img/siesta.jpg" alt="La siesta" style="width:30%">
+					<h3 class="topic moverTxt">La siesta</h3>
+					<p class="moverTxt"><strong>Antonio Berni</strong></p>
+					<p class="moverTxt">1943</p>
+				</a>
+				<a href="#" class="delete">Delete</a>
+			</li>
+		</ul>
+	</div><!-- /content -->
+	<div id="confirm" class="ui-content" data-role="popup" data-theme="a">
+		<p id="question">Est&aacute; seguro que desea marcar como vista:</p>
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<a id="yes" class="ui-btn ui-corner-all ui-mini ui-btn-a" data-rel="back">Aceptar</a>
+			</div>
+			<div class="ui-block-b">
+				<a id="cancel" class="ui-btn ui-corner-all ui-mini ui-btn-a" data-rel="back">Cancelar</a>
+			</div>
+		</div>
+	</div><!-- /popup -->
+    
+	<div data-role="popup" id="popupRiachuelo" data-overlay-theme="b" data-theme="b" data-corners="false">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="img/riachuelo.jpg" style="max-height:512px;" alt="El Riachuelo">
+	</div>
+    
+    <div data-role="popup" id="popupMaiz" data-overlay-theme="b" data-theme="b" data-corners="false">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="img/maiz.jpg" style="max-height:512px;" alt="Caja de ma&iacute;z">
+	</div>
+    
+    <div data-role="popup" id="popupDuelo" data-overlay-theme="b" data-theme="b" data-corners="false">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="img/duelo.jpg" style="max-height:512px;" alt="El primer duelo">
+	</div>
+    
+    <div data-role="popup" id="popupNocturno" data-overlay-theme="b" data-theme="b" data-corners="false">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="img/nocturno.jpg" style="max-height:512px;" alt="Buenos aires nocturno">
+	</div>
+    
+    <div data-role="popup" id="popupSiesta" data-overlay-theme="b" data-theme="b" data-corners="false">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="img/siesta.jpg" style="max-height:512px;" alt="La siesta">
+	</div>
+    
+</div>
+
+</body>
+</html>

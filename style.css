@@ -1,0 +1,150 @@
+/*
+** HOME
+*/
+
+#inicio {
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	position:relative;
+	background:radial-gradient(ellipse at center, #006 0%,#003 100%);
+	
+}
+
+
+#loginField, #loginField2 {
+	width:30%;
+	margin: 0 auto;
+	padding-bottom:2%;
+	padding-left:2%;
+}
+	
+.login {
+	color:#FFF;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-align:left;
+	padding-left:2%;
+	padding-bottom:2%;
+}
+#headerInicio  {
+	border:none;
+	position:absolute;
+	background: transparent;		
+}
+
+#headerInicio img {
+	width:120%;
+	border:none;
+	margin-top:-20em;
+	margin-left:-2em;
+}
+
+#entrarBtn {
+	color:#006;
+	font-weight:300;
+	background:#FFF;
+	margin-left:-3em;
+	padding-left:-1em;
+}
+#enterBtn {
+	width:100%; 
+	margin:25em 0 0 -0.7em;
+}
+
+/*
+** MENU
+*/
+
+#menuHeader {
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	background:#006;
+	padding:15px 0 10px 0;
+}
+
+#menuHeader h1 img {
+	width:30%;
+	margin:0 auto;
+}
+
+/*
+**	PANEL
+*/
+
+#panelTitulo{
+	background-color:#0063be;
+	padding:10px 0 5px 30px;
+}
+
+/* Left transition */
+li.left {
+    -webkit-transition: -webkit-transform 250ms ease;
+    -webkit-transform: translateX(-100%);
+    -moz-transition: -moz-transform 250ms ease;
+    -moz-transform: translateX(-100%);
+    -o-transition: -o-transform 250ms ease;
+    -o-transform: translateX(-100%);
+    transition: transform 250ms ease;
+    transform: translateX(-100%);
+}
+/* Right transition */
+li.right {
+    -webkit-transition: -webkit-transform 250ms ease;
+    -webkit-transform: translateX(100%);
+    -moz-transition: -moz-transform 250ms ease;
+    -moz-transform: translateX(100%);
+    -o-transition: -o-transform 250ms ease;
+    -o-transform: translateX(100%);
+    transition: transform 250ms ease;
+    transform: translateX(100%);
+}
+/* Border bottom for the previous button during the transition*/
+li.left a.ui-btn,
+li.right a.ui-btn {
+    border-top-width: 0;
+    border-left-width: 1px;
+    border-right-width: 1px;
+}
+li a.ui-btn.border-bottom {
+    border-bottom-width: 1px;
+}
+/* Hide the delete button on touch devices */
+ul.touch li.ui-li-has-alt a.delete {
+    display: none;
+}
+ul.touch li.ui-li-has-alt a.ui-btn {
+    margin-right:0;
+}
+/* Styling for the popup */
+#confirm p {
+    text-align: center;
+    font-size: inherit;
+    margin-bottom: .75em;
+}
+
+/*
+**	CLASSES
+*/
+
+.imprenta {
+	text-transform:uppercase;
+}
+
+.thumb {	
+	margin:20px 0 0 20px;
+}
+
+h3.moverTxt {
+	padding-left:20px;
+}
+
+p.moverTxt {
+	padding-left:20px;
+}
+
+.tituloRecorrido {
+	padding-bottom:20px;	
+}
+
