@@ -18,5 +18,6 @@
     <author href="https://socialgaming.com.ar" email="contact@socialgaming.com">
       Push for Unicorns Studio
     </author>
+	   <icon src="icon.png" />
 
 </widget>
