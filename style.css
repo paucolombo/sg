@@ -9,13 +9,9 @@
 	background:radial-gradient(ellipse at center, #006 0%,#003 100%);
 	height:100%;
 }
-
-
 #loginField, #loginField2 {
-	width:50%;
 	margin: 0 auto;
 	padding-bottom:2%;
-	padding-left:2%;
 }
 	
 .login {
@@ -25,6 +21,7 @@
 	text-align:left;
 	padding-left:2%;
 	padding-bottom:2%;
+
 }
 #headerInicio  {
 	width:100%;
@@ -36,18 +33,28 @@
 #headerInicio img {
 	border:none;
 	margin-left:2em;
-}
+    }
 
 #entrarBtn {
 	color:#006;
 	font-weight:300;
 	background:#FFF;
-	margin-left:-3em;
-	padding-left:-1em;
-}
+	/*margin-left:-3em;*/
+    }
 #enterBtn {
-	width:100%; 
-}
+	width:50%;
+    padding: 1em 0;
+    margin: 0 auto;
+    }
+    #enterBtn input,#enterBtn label  {
+        width: 100%;
+        }
+        #loginField .ui-input-text, #loginField2 .ui-input-text {
+            width: 100%;
+            }
+
+
+
 
 /*
 ** MENU
@@ -131,38 +138,58 @@ p.moverTxt {
 .tituloRecorrido {
 	padding-bottom:20px;	
 }
-
-.comentarioPosteado, .comentariosUser {
-	margin-top:3em;
-	width:100%;
-}
-.comentariosUser img, .comentarioPosteado img{
-	float:left;
-	padding-right:0.5em;
-}
-
-.comentarioText {
-	width:70%;
-	margin-top:0.2em;
-	padding-top:0;
-}
-
-.comentarioPosteado h6, comentariosUser h6{
-	width: 10%;
-	margin-bottom:0;
-	padding-bottom:0;
-}
- .comentarioPosteado p {
-	 margin-top:0.2em;
-	 padding-top:0;
- }
- #btnComentar {
-	 color:#FFF;
-	font-weight:bold;
-	background:#006;
-	margin-top:0;
- }
 .notaImg {
 	max-width:100%;
 	height:auto;
 }
+/*------ Comentarios -------------------------*/
+/*---- General Style --*/
+.comentarioPosteado, .comentariosUser {
+	margin-top:3em;
+	width:100%;
+}
+.comentariosUser img {
+	/*float:left;*/
+	padding-right:0.5em;
+}
+
+/*---- Postear Comentario --*/
+.comentariosUser h6 {
+    display: inline;
+    vertical-align: text-top;
+	margin-bottom:0;
+	padding-bottom:0;
+    }
+.comentarioText {
+	width:98%;
+	margin-top:0.2em;
+	padding-top:0;
+    }
+#btnComentar {
+	 color:#FFF;
+	font-weight:bold;
+	background:#006;
+	margin-top:0;
+    }
+/*---- Comentario Posteado --*/
+.comentarioPosteadoImagen {
+    float:left;
+    max-width: 10%;
+    padding-right:0.5em;
+    }
+    .comentarioPosteadoImagen img {
+        width: 100%;
+        }
+.comentarioPosteadoInfo {
+    float: left;
+    width: 85%;
+    }
+    .comentarioPosteado h6 {
+        width: 100%;
+        margin:0;
+        padding:0;
+        }
+    .comentarioPosteado p {
+        margin-top:0.2em;
+        padding-top:0;
+        }
